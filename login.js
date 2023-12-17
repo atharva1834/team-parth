@@ -47,7 +47,7 @@ const firebaseConfig = {
     }) .then(() => {
       // Data successfully saved
       alert('Data successfully saved to Firebase!');
-      window.location.href = "/index.html";
+      window.location.href = "/index5.html";
       // You can add additional actions here if needed
     })
     .catch((error) => {
