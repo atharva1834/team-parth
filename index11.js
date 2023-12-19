@@ -10,7 +10,7 @@ const firebaseConfig = {
     measurementId: "G-1Z8YF4226H"
     };
 
-// Initialize Firebase
+// Initialize Firebase here
 firebase.initializeApp(firebaseConfig);
 
 // Get a reference to the database

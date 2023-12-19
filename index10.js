@@ -12,7 +12,7 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-// Reference to your Firebase Realtime Database
+// Reference to your Firebase Realtime Database here
 const database = firebase.database();
 
 //Function to fetch and display data when the button is clicked
