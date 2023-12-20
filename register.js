@@ -10,47 +10,45 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
-const nameref = firebase.database().ref('name');
+const database = firebase.database();
+const nameref = database.ref('name');
 
-//listen for register
-document.getElementById('registration-form').addEventListener('submit', submitform);
+// Listen for form submission
+document.getElementById('registration-form').addEventListener('submit', submitForm);
 
-
-//submit form
-function submitform(e)
-{
+// Submit form
+function submitForm(e) {
   e.preventDefault();
 
-  //get values
-  var name = getInputVal('name');
-  var email = getInputVal('email');
-  var password = getInputVal('password');
-//save form
-saveform(name, email, password);
+  // Get form values
+  const name = getInputVal('name');
+  const email = getInputVal('email');
+  const password = getInputVal('password');
 
-
+  // Save form
+  saveForm(name, email, password);
 }
 
-
-// Function to get get form values
-function getInputVal(id)
-{
-   return document.getElementById(id).value;
+// Function to get form values
+function getInputVal(id) {
+  return document.getElementById(id).value;
 }
 
-//save messeges to firebase
-function saveform(name, email, password){
+// Save messages to Firebase
+function saveForm(name, email, password) {
   console.log('Saving data to Firebase:', name, email, password);
-  var newname = nameref.push();
+
+  const newname = nameref.push();
   newname.set({
-      name:name,
-      email:email,
-      password:password
-  }) .then(() => {
+    name: name,
+    email: email,
+    password: password
+  })
+  .then(() => {
     // Data successfully saved
     alert('Data successfully saved to Firebase!');
-    window.location.href = "/index3.html";
-    // You can add additional actions here if needed
+    console.log('Redirecting to index3.html');
+    window.location.href = "index5.html";
   })
   .catch((error) => {
     // Handle errors
