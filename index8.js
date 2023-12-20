@@ -15,7 +15,7 @@
         firebase.initializeApp(firebaseConfig);
     
         // Get a reference to the database
-        var database = firebase.database();
+        var database = firebase.database(); 
     
         var selectedOptions = {};
     
