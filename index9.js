@@ -37,7 +37,7 @@
                 // Show alert
                 alert('Radio button data has been stored in Firebase!');
                 // Redirect to the next page
-                window.location.href = 'index10.html';
+                window.location.href = 'resultf.html';
             }).catch(function (error) {
                 console.error('Error storing data in Firebase:', error);
             });
