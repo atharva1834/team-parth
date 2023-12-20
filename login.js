@@ -9,51 +9,37 @@ const firebaseConfig = {
   measurementId: "G-1Z8YF4226H"
 };
   
-  firebase.initializeApp(firebaseConfig);
-  const nameref = firebase.database().ref('name');
-  
-  //listen for register
-  document.getElementById('login').addEventListener('submit', submitform);
-  
-  
-  //submit form
-  function submitform(e)
-  {
-    e.preventDefault();
-  
-    //get values
-    var email = getInputVal('email');
-    var password = getInputVal('password');
-  //save form
-  saveform(email, password);
-  
-  
-  }
-  
-  
-  // Function to get get form values
-  function getInputVal(id)
-  {
-     return document.getElementById(id).value;
-  }
-  
-  //save messeges to firebase
-  function saveform(email, password){
-    console.log('Saving data to Firebase:', email, password);
-    var newname = nameref.push();
-    newname.set({
-        email:email,
-        password:password
-    }) .then(() => {
-      // Data successfully saved
-      alert('Data successfully saved to Firebase!');
-      window.location.href = "/index5.html";
-      // You can add additional actions here if needed
-    })
-    .catch((error) => {
-      // Handle errors
-      console.error('Error saving data to Firebase:', error);
-      alert('Error saving data to Firebase. Please try again.');
-    });
-  }
-  
+firebase.initializeApp(firebaseConfig);
+
+    // Listen for login form submission
+    document.getElementById('login').addEventListener('submit', submitForm);
+
+    // Submit form
+    function submitForm(e) {
+      e.preventDefault();
+
+      // Get email and password values
+      var email = getInputVal('email');
+      var password = getInputVal('password');
+
+      // Authenticate user with Firebase
+      firebase.auth().signInWithEmailAndPassword(email, password)
+        .then((userCredential) => {
+          // Signed in
+          var user = userCredential.user;
+          alert('Login successful!');
+          window.location.href = "/index5.html";
+        })
+        .catch((error) => {
+          // Handle login errors
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          console.error('Login error:', errorMessage);
+          alert('Login failed. Please check your email and password.');
+        });
+    }
+
+    // Function to get form values
+    function getInputVal(id) {
+      return document.getElementById(id).value;
+    }
