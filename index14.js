@@ -1,15 +1,14 @@
 // Replace with your Firebase project configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDvjKGvBqKixbBxduTtk-nrdvnG7jMlUww",
-    authDomain: "team-parth-fe53f.firebaseapp.com",
-    databaseURL: "https://team-parth-fe53f-default-rtdb.firebaseio.com",
-    projectId: "team-parth-fe53f",
-    storageBucket: "team-parth-fe53f.appspot.com",
-    messagingSenderId: "761597864606",
-    appId: "1:761597864606:web:5af4003af020d0df83e98f",
-    measurementId: "G-1Z8YF4226H"
-    };
-
+    apiKey: "AIzaSyDbPas2bcVppZI_nWgNustvBBSBzMIRAJ4",
+    authDomain: "parth-grand-finale.firebaseapp.com",
+    databaseURL: "https://parth-grand-finale-default-rtdb.firebaseio.com",
+    projectId: "parth-grand-finale",
+    storageBucket: "parth-grand-finale.appspot.com",
+    messagingSenderId: "478526429762",
+    appId: "1:478526429762:web:2d091dd431e0701c7a6bdb",
+    measurementId: "G-NEDR2F8Y1V"
+  };
 // Initialize Firebase here
 firebase.initializeApp(firebaseConfig);
 

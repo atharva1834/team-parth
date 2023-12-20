@@ -1,13 +1,13 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyAYehy9ApuLnz4kW4ITPZ_jelPDViAfwiw",
-    authDomain: "parthtest-228cb.firebaseapp.com",
-    databaseURL: "https://parthtest-228cb-default-rtdb.firebaseio.com",
-    projectId: "parthtest-228cb",
-    storageBucket: "parthtest-228cb.appspot.com",
-    messagingSenderId: "955201959682",
-    appId: "1:955201959682:web:523b760df8d6bcca06741b",
-    measurementId: "G-C4DGQT8ERT"
-  };
+  apiKey: "AIzaSyDbPas2bcVppZI_nWgNustvBBSBzMIRAJ4",
+  authDomain: "parth-grand-finale.firebaseapp.com",
+  databaseURL: "https://parth-grand-finale-default-rtdb.firebaseio.com",
+  projectId: "parth-grand-finale",
+  storageBucket: "parth-grand-finale.appspot.com",
+  messagingSenderId: "478526429762",
+  appId: "1:478526429762:web:2d091dd431e0701c7a6bdb",
+  measurementId: "G-NEDR2F8Y1V"
+};
   
   firebase.initializeApp(firebaseConfig);
   const nameref = firebase.database().ref('users');
