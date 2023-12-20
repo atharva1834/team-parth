@@ -1,0 +1,188 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(bg1.webp );
+
+}
+
+header {
+    background-color: #f8f4d1;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.blog-title {
+    font-size: 2.5em;
+    color: #000407;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #444;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.card {
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    /* Make the image fill the container */
+    border-radius: 8px;
+}
+
+
+a.read-more {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a.read-more:hover {
+    text-decoration: underline;
+}
+
+#technology img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+
+}
+
+#technology.featured-image {
+    border: 2px solid #3498db;
+}
+
+#healthcare img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+
+}
+
+#healthcare.featured-image {
+    border: 2px solid #3498db;
+}
+
+#business img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+
+}
+
+#business.featured-image {
+    border: 2px solid #3498db;
+}
+
+#commerce img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+
+}
+
+#commerce.featured-image {
+    border: 2px solid #3498db;
+}
+
+#sports img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+#sports .featured-image {
+    border: 2px solid #3498db;
+}
+
+#arts img {
+    max-width: 470px;
+    height: auto;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+#arts .featured-image {
+    border: 2px solid #3498db;
+}
+
+.discover-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fa4109;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.discover-more-button:hover {
+    background-color: #3bdf43;
+}

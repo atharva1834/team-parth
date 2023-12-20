@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url(bg1.webp);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+section {
+    padding: 20px;
+}
+
+
+
+h2 {
+    color: #010a0f;
+    text-decoration: underline;
+
+}
+
+p {
+    line-height: 1.6;
+    font-weight: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}

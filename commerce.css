@@ -1,0 +1,36 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+
+h2 {
+    color: #007BFF;
+}
+
+
+p {
+    line-height: 1.6;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
